@@ -1,0 +1,51 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+
+  <!-- 高级配置 -->
+  <servlet>
+    <servlet-name>login</servlet-name>
+    <servlet-class>com.shrcb.servlet.controller.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>login</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>user</servlet-name>
+    <servlet-class>com.shrcb.servlet.controller.UserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>user</servlet-name>
+    <url-pattern>/user</url-pattern>
+  </servlet-mapping>
+  <!--
+  <servlet-name></servlet-name> 指定servlet的名称
+  <servlet-class></servlet-class> 指定servlet的类名称
+  <jsp-file></jsp-file> 指定web站台中的某个JSP网页的完整路径
+  <init-param></init-param> 用来定义参数，可有多个init-param。在servlet类中通过getInitParamenter(String name)方法访问初始化参数
+  <load-on-startup></load-on-startup>指定当Web应用启动时，装载Servlet的次序。当值为正数或零时：Servlet容器先加载数值小的servlet，再依次加载其他数值大的servlet。当值为负或未定义：Servlet容器将在Web客户首次访问这个servlet时加载它。
+  <servlet-mapping></servlet-mapping> 用来定义servlet所对应的URL，包含两个子元素
+  <servlet-name></servlet-name> 指定servlet的名称
+  <url-pattern></url-pattern> 指定servlet所对应的URL
+  -->
+
+<!--  <filter>-->
+<!--    <filter-name>authenticateFilter</filter-name>-->
+<!--    <filter-class>com.shrcb.filter.AuthenticateFilter</filter-class>-->
+<!--    <init-param>-->
+<!--      <param-name>encoding</param-name>-->
+<!--      <param-value>UTF-8</param-value>-->
+<!--    </init-param>-->
+<!--  </filter>-->
+<!--  <filter-mapping>-->
+<!--    <filter-name>authenticateFilter</filter-name>-->
+<!--    <url-pattern>/*</url-pattern>-->
+<!--  </filter-mapping>-->
+
+</web-app>
